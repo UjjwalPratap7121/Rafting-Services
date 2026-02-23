@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <img src="images/logo.png" alt="River Rafting Rishikesh Logo" class="logo">
+            <span class="site-name">River Rafting Rishikesh</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#activities">Adventure activities</a></li>
+            <li><a href="#packages">Packages</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+            <a href="#book" class="btn-book">Book Now</a>
+        </div>
+    </nav>
+    <div class="video-container">
+        <!-- Background video: muted and autoplay are required for auto-playing in most browsers -->
+        <video autoplay muted loop playsinline class="bg-video">
+            <source src="videos/rafting.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <!-- Optional overlay to darken the video for text readability -->
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>Experience The Thrill</h1>
+            <p>Join us for the ultimate rafting adventure.</p>
+            <a href="#book" class="btn-hero">Book Your Adventure</a>
+        </div>
+    </div>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">River Rafting in Rishikesh</h2>
+            <div class="title-underline"></div>
+            <p class="section-subtitle">Discover the thrill of navigating the sacred Ganges River amidst the
+                breathtaking Himalayas.</p>
+            <div class="approval-badge-container">
+                <div class="approval-badge">
+                    Approved by Uttarakhand Tourism & Forest Department
+                </div>
+            </div>
+
+            <!-- Two Column Layout -->
+            <div class="about-content">
+                <!-- Left Side: Images -->
+                <div class="about-images">
+                    <img src="images/Rafting 1.jpeg" alt="Rafting Image 1" class="img-main">
+                    <img src="images/Rafting 2.jpeg" alt="Rafting Image 2" class="img-secondary">
+                </div>
+
+                <!-- Right Side: Text Content -->
+                <div class="about-text">
+                    <h3>Welcome to Rafting Rishikesh</h3>
+                    <p>We are a trusted adventure travel company based in Rishikesh, dedicated to providing safe,
+                        thrilling, and memorable rafting experiences. With years of expertise, modern safety equipment,
+                        and trained guides, we ensure every adventure is exciting yet secure.</p>
+                    <p>Rishikesh is known worldwide as the hub of river rafting in India. Surrounded by scenic Himalayan
+                        views and flowing along the sacred River Ganga, rafting here is a perfect mix of thrill, nature,
+                        and spirituality.</p>
+                    <p>Our goal is not just rafting — we create adventure memories that stay with you for life. Whether
+                        you're traveling solo, with friends, family, or corporate groups, we customize rafting
+                        experiences that match your adventure spirit.</p>
+
+                    <!-- Contact & Info Points -->
+                    <div class="about-info-points">
+                        <div class="info-item">
+                            <img src="images/icon-location.png" alt="Location Icon" class="info-icon">
+                            <span><strong>Location:</strong> Rishikesh, Uttarakhand</span>
+                        </div>
+                        <div class="info-item">
+                            <img src="images/icon-safety.png" alt="Safety Icon" class="info-icon">
+                            <span><strong>Safety:</strong> Top Priority Always</span>
+                        </div>
+                        <div class="info-item address-item">
+                            <img src="images/icon-location.png" alt="Address Icon" class="info-icon">
+                            <span>Jhula Parking, Rishikesh, Uttarakhand 249201</span>
+                        </div>
+
+                        <a href="https://wa.me/919999999999" class="btn-whatsapp" target="_blank">
+                            <img src="images/icon-whatsapp.png" alt="WhatsApp Icon" class="btn-icon">
+                            Contact on Whatsapp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="whyus" class="why-choose-us-section">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us ?</h2>
+            <div class="title-underline"></div>
+            <p class="section-subtitle">We combine safety, expertise, and passion to deliver the best rafting experience
+                in Rishikesh</p>
+
+            <!-- Features Grid -->
+            <div class="features-grid">
+                <!-- Tile 1 -->
+                <div class="feature-card">
+                    <img src="images/icon-satisfaction.png" alt="Customer Satisfaction Icon">
+                    <h4>Customer Satisfaction</h4>
+                    <p>We are 100% committed to your happiness and comfort.</p>
+                </div>
+                <!-- Tile 2 -->
+                <div class="feature-card">
+                    <img src="images/icon-guide.png" alt="Experienced Guides Icon">
+                    <h4>Experienced Guides</h4>
+                    <p>Certified, friendly experts for an amazing journey.</p>
+                </div>
+                <!-- Tile 3 -->
+                <div class="feature-card">
+                    <img src="images/icon-safety-first.png" alt="Safety First Icon">
+                    <h4>Safety First</h4>
+                    <p>Premium gear and strict safety protocols always.</p>
+                </div>
+                <!-- Tile 4 -->
+                <div class="feature-card">
+                    <img src="images/icon-secure-payments.png" alt="Secure Payments Icon">
+                    <h4>Secure Payments</h4>
+                    <p>Fast, reliable, and completely secure booking.</p>
+                </div>
+                <!-- Tile 5 -->
+                <div class="feature-card">
+                    <img src="images/icon-offers.png" alt="Amazing Offers Icon">
+                    <h4>Amazing Offers</h4>
+                    <p>Unbeatable packages and deals for every group.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Adventure Activities Section -->
+    <section id="activities" class="activities-section">
+        <div class="container">
+            <h2 class="section-title">Adventure Activities in Rishikesh</h2>
+            <div class="title-underline"></div>
+            <p class="section-subtitle">Take your Rishikesh experience to the next level with these thrilling
+                activities.<br>Perfect additions to your river rafting adventure.</p>
+
+            <div class="activities-grid">
+                <!-- Activity 1 -->
+                <div class="activity-card">
+                    <img src="images/Gallery (1).webp" alt="Bungee Jumping in Rishikesh" class="activity-img">
+                    <div class="activity-content">
+                        <h3>Bungee Jumping</h3>
+                        <p>Experience the ultimate adrenaline rush jumping from India's highest bungee platform.</p>
+                        <a href="#contact" class="btn-pkg">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- Activity 2 -->
+                <div class="activity-card">
+                    <img src="images/Gallery (2).webp" alt="Ziplining over Ganges" class="activity-img">
+                    <div class="activity-content">
+                        <h3>Flying Fox (Zipline)</h3>
+                        <p>Soar high above the magnificent Ganges river experiencing breathtaking panoramic views.</p>
+                        <a href="#contact" class="btn-pkg">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- Activity 3 -->
+                <div class="activity-card">
+                    <img src="images/Gallery (3).webp" alt="Waterfall Trekking" class="activity-img">
+                    <div class="activity-content">
+                        <h3>Waterfall Trekking</h3>
+                        <p>Hike through pristine forests to discover hidden, cascading waterfalls in the Himalayas.</p>
+                        <a href="#contact" class="btn-pkg">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="packages-section">
+        <div class="container">
+            <h2 class="section-title">Best Rafting Packages in Rishikesh</h2>
+            <div class="title-underline"></div>
+            <p class="section-subtitle">Explore our handpicked rafting packages designed for all adventure
+                levels.<br>Whether you are a beginner or a seasoned rafter, we have the perfect itinerary for you.</p>
+
+            <!-- Packages Grid -->
+            <div class="packages-grid">
+                <!-- Package 1 -->
+                <div class="package-card">
+                    <img src="images/Rafting 1.jpeg" alt="Clubhouse to NIM beach Rafting" class="pkg-image">
+                    <div class="pkg-content">
+                        <h4 class="pkg-title">Clubhouse to NIM beach (09 KM)</h4>
+                        <ul class="pkg-details">
+                            <li><img src="images/icon-clock.png" alt="Duration" class="detail-icon"> Approximately 1
+                                Hour</li>
+                            <li><img src="images/icon-calendar.png" alt="Schedule" class="detail-icon"> Every Day at
+                                9:00 A.M and 2:00 P.M</li>
+                            <li><img src="images/icon-location.png" alt="Location" class="detail-icon"> Rishikesh River
+                                Rafting</li>
+                        </ul>
+                        <p class="pkg-price">INR 600 <span class="per-person">/ person</span></p>
+                        <div class="pkg-buttons">
+                            <a href="#readmore" class="btn-pkg btn-readmore">Read More</a>
+                            <a href="#book" class="btn-pkg">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package 2 -->
+                <div class="package-card">
+                    <img src="images/Rafting 2.jpeg" alt="Shivpuri to NIM beach Rafting" class="pkg-image">
+                    <div class="pkg-content">
+                        <h4 class="pkg-title">Shivpuri to NIM beach (16 KM)</h4>
+                        <ul class="pkg-details">
+                            <li><img src="images/icon-clock.png" alt="Duration" class="detail-icon"> Approximately 2-3
+                                Hour</li>
+                            <li><img src="images/icon-calendar.png" alt="Schedule" class="detail-icon"> Every Day at
+                                9:00 A.M and 2:00 P.M</li>
+                            <li><img src="images/icon-location.png" alt="Location" class="detail-icon"> Rishikesh River
+                                Rafting</li>
+                        </ul>
+                        <p class="pkg-price">INR 1000 <span class="per-person">/ person</span></p>
+                        <div class="pkg-buttons">
+                            <a href="#readmore" class="btn-pkg btn-readmore">Read More</a>
+                            <a href="#book" class="btn-pkg">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package 3 -->
+                <div class="package-card">
+                    <img src="images/Rafting 3.jpeg" alt="Marine drive to NIM beach Rafting" class="pkg-image">
+                    <div class="pkg-content">
+                        <h4 class="pkg-title">Marine drive to NIM beach (26 KM)</h4>
+                        <ul class="pkg-details">
+                            <li><img src="images/icon-clock.png" alt="Duration" class="detail-icon"> Approximately 3-4
+                                Hour</li>
+                            <li><img src="images/icon-calendar.png" alt="Schedule" class="detail-icon"> Every Day at
+                                9:00 A.M and 2:00 P.M</li>
+                            <li><img src="images/icon-location.png" alt="Location" class="detail-icon"> Rishikesh River
+                                Rafting</li>
+                        </ul>
+                        <p class="pkg-price">INR 1500 <span class="per-person">/ person</span></p>
+                        <div class="pkg-buttons">
+                            <a href="#readmore" class="btn-pkg btn-readmore">Read More</a>
+                            <a href="#book" class="btn-pkg">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package 4 -->
+                <div class="package-card">
+                    <img src="images/package-3.jpg" alt="Devprayag to NIM beach Rafting" class="pkg-image">
+                    <div class="pkg-content">
+                        <h4 class="pkg-title">Devprayag to NIM beach (70 KM)</h4>
+                        <ul class="pkg-details">
+                            <li><img src="images/icon-clock.png" alt="Duration" class="detail-icon"> 2 Days</li>
+                            <li><img src="images/icon-calendar.png" alt="Schedule" class="detail-icon"> Every Day at
+                                9:00 A.M and 2:00 P.M</li>
+                            <li><img src="images/icon-location.png" alt="Location" class="detail-icon"> Rishikesh River
+                                Rafting</li>
+                        </ul>
+                        <p class="pkg-price">INR 7000 <span class="per-person">/ person</span></p>
+                        <div class="pkg-buttons">
+                            <a href="#readmore" class="btn-pkg btn-readmore">Read More</a>
+                            <a href="#book" class="btn-pkg">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Camping Packages Section -->
+    <section id="camping" class="camping-section">
+        <div class="container">
+            <h2 class="section-title">Best Camping Packages in Rishikesh</h2>
+            <div class="title-underline"></div>
+
+            <div class="packages-grid">
+                <!-- Package 1 -->
+                <div class="package-card">
+                    <img src="images/river side resort.webp" alt="River side resort" class="pkg-image">
+                    <div class="pkg-content">
+                        <h4 class="pkg-title">River side resort</h4>
+                        <ul class="pkg-details">
+                            <li><img src="images/icon-clock.png" alt="Duration" class="detail-icon"> 1 Night / 2 Days
+                            </li>
+                            <li><img src="images/icon-calendar.png" alt="Schedule" class="detail-icon"> Check-in 12:00
+                                PM</li>
+                            <li><img src="images/icon-location.png" alt="Location" class="detail-icon"> Kodiyala,
+                                Rishikesh</li>
+                        </ul>
+                        <p class="pkg-price">INR 1500 <span class="per-person">/ person</span></p>
+                        <div class="pkg-buttons">
+                            <a href="#readmore" class="btn-pkg btn-readmore">Read More</a>
+                            <a href="#book" class="btn-pkg">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package 2 -->
+                <div class="package-card">
+                    <img src="images/beach camp.jpg" alt="Beach Camp Packages" class="pkg-image">
+                    <div class="pkg-content">
+                        <h4 class="pkg-title">Beach Camp Packages</h4>
+                        <ul class="pkg-details">
+                            <li><img src="images/icon-clock.png" alt="Duration" class="detail-icon"> 1 Night / 2 Days
+                            </li>
+                            <li><img src="images/icon-calendar.png" alt="Schedule" class="detail-icon"> Check-in 11:00
+                                AM</li>
+                            <li><img src="images/icon-location.png" alt="Location" class="detail-icon"> Shivpuri Beach
+                            </li>
+                        </ul>
+                        <p class="pkg-price">INR 1200 <span class="per-person">/ person</span></p>
+                        <div class="pkg-buttons">
+                            <a href="#readmore" class="btn-pkg btn-readmore">Read More</a>
+                            <a href="#book" class="btn-pkg">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package 3 -->
+                <div class="package-card">
+                    <img src="images/jungle camp.jpg" alt="Jungle camp packages" class="pkg-image">
+                    <div class="pkg-content">
+                        <h4 class="pkg-title">Jungle camp packages</h4>
+                        <ul class="pkg-details">
+                            <li><img src="images/icon-clock.png" alt="Duration" class="detail-icon"> 1 Night / 2 Days
+                            </li>
+                            <li><img src="images/icon-calendar.png" alt="Schedule" class="detail-icon"> Check-in 12:00
+                                PM</li>
+                            <li><img src="images/icon-location.png" alt="Location" class="detail-icon"> Mohan Chatti
+                            </li>
+                        </ul>
+                        <p class="pkg-price">INR 1800 <span class="per-person">/ person</span></p>
+                        <div class="pkg-buttons">
+                            <a href="#readmore" class="btn-pkg btn-readmore">Read More</a>
+                            <a href="#book" class="btn-pkg">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package 4 -->
+                <div class="package-card">
+                    <img src="images/luxury camp.jpg" alt="Luxury Camp packages" class="pkg-image">
+                    <div class="pkg-content">
+                        <h4 class="pkg-title">Luxury Camp packages</h4>
+                        <ul class="pkg-details">
+                            <li><img src="images/icon-clock.png" alt="Duration" class="detail-icon"> 1 Night / 2 Days
+                            </li>
+                            <li><img src="images/icon-calendar.png" alt="Schedule" class="detail-icon"> Check-in 01:00
+                                PM</li>
+                            <li><img src="images/icon-location.png" alt="Location" class="detail-icon"> Rishikesh Valley
+                            </li>
+                        </ul>
+                        <p class="pkg-price">INR 3000 <span class="per-person">/ person</span></p>
+                        <div class="pkg-buttons">
+                            <a href="#readmore" class="btn-pkg btn-readmore">Read More</a>
+                            <a href="#book" class="btn-pkg">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Reach Rishikesh Section -->
+    <section id="how-to-reach" class="how-to-reach-section">
+        <div class="container">
+            <h2 class="section-title">How to Reach Rishikesh</h2>
+            <div class="title-underline"></div>
+
+            <div class="how-to-reach-content">
+                <!-- Left Side: Text and Transport info -->
+                <div class="reach-text">
+                    <p>Rishikesh Rafting now attract thousands of professional sports hunting travellers every year. The
+                        excitement and enjoyment of Shivpuri river rafting deals are out of any adverse situation. It
+                        has a feeling like no other in the natural configuration of the magnificent landscape. rafting
+                        is currently a trending action in the world and attracts all customers.</p>
+                    <p>Rafting is different from your regular athletic experience activities and in itself provides a
+                        more specific encounter and unforgettable experience. Rafting is a more well-known recreational
+                        action plus, which must be at least 14 years of age to do. But being a swimmer is not a
+                        requirement to try this excellent adventure water sports activity.</p>
+                    <p>You will find four different starting points of Rishikesh River Rafting, which range from basic
+                        to challenging. As a result, you may have four specific places to choose from other points.</p>
+
+                    <ul class="transport-list">
+                        <li><strong>By Road:</strong> Delhi to Rishikesh 250 kms far.</li>
+                        <li><strong>By Rail:</strong> The nearest railway are Haridwar and Rishikesh. Rishikesh is the
+                            fastest approach to rafting in the future.</li>
+                        <li><strong>By Air:</strong> The Jolly Grant of Rishikesh is the nearest airport from 20 km.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Right Side: Distance Chart -->
+                <div class="reach-chart">
+                    <div class="distance-card">
+                        <h3>Rishikesh Road Distance Chart</h3>
+                        <ul class="distance-list">
+                            <li><span>Delhi to Rishikesh</span> <span>240 kms</span></li>
+                            <li><span>Haridwar to Rishikesh</span> <span>25 kms</span></li>
+                            <li><span>Dehradun to Rishikesh</span> <span>44 kms</span></li>
+                            <li><span>Mussoorie to Rishikesh</span> <span>78 kms</span></li>
+                            <li><span>Meerut to Rishikesh</span> <span>170 kms</span></li>
+                            <li><span>Rudraprayag to Rishikesh</span> <span>139 kms</span></li>
+                            <li><span>Joshimath to Rishikesh</span> <span>252 kms</span></li>
+                            <li><span>Lansdown to Rishikesh</span> <span>109 kms</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Image Gallery -->
+        <div id="gallery" class="photo-gallery">
+            <img src="images/Gallery (1).webp" alt="Rishikesh Gallery Image 1" class="gallery-img">
+            <img src="images/Gallery (2).webp" alt="Rishikesh Gallery Image 2" class="gallery-img">
+            <img src="images/Gallery (3).webp" alt="Rishikesh Gallery Image 3" class="gallery-img">
+            <img src="images/Gallery (4).webp" alt="Rishikesh Gallery Image 4" class="gallery-img">
+        </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews-section">
+        <div class="container">
+            <h2 class="section-title">What Our Adventurers Say</h2>
+            <div class="title-underline"></div>
+            <p class="section-subtitle">Real experiences from our thrilled guests who braved the Ganges with us.</p>
+
+            <div class="reviews-grid">
+                <!-- Review 1 -->
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Absolutely incredible experience! The guides were professional and made us
+                        feel extremely safe the entire time. Highly recommend the 16km stretch!"</p>
+                    <h4 class="reviewer-name">- Amit Sharma</h4>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"My first time rafting and it exceeded all expectations. The equipment was
+                        top-notch and the rapids were thrilling. Will definitely be returning next year."</p>
+                    <h4 class="reviewer-name">- Priya Patel</h4>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"The camping and rafting combo package was perfect for our weekend getaway.
+                        Clean tents, great food, and an unforgettable journey down the river."</p>
+                    <h4 class="reviewer-name">- Rahul Verma</h4>
+                </div>
+            </div>
+            <!-- Contact Section -->
+            <section id="contact" class="contact-section">
+                <div class="container">
+                    <h2 class="section-title">Get in Touch</h2>
+                    <div class="title-underline"></div>
+                    <p class="section-subtitle">Have questions or ready to book your adventure? We're here to help.</p>
+
+                    <div class="contact-container">
+                        <!-- Contact Form -->
+                        <div class="contact-form-box">
+                            <h3>Send us a Message</h3>
+                            <form action="#" method="POST" class="contact-form">
+                                <div class="form-group">
+                                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                                </div>
+                                <div class="form-group">
+                                    <textarea id="message" name="message" rows="4" placeholder="How can we help you?"
+                                        required></textarea>
+                                </div>
+                                <button type="submit" class="btn-submit">Send Message</button>
+                            </form>
+                        </div>
+
+                        <!-- Contact Info Info -->
+                        <div class="contact-info-box">
+                            <h3>Contact Information</h3>
+                            <div class="info-item">
+                                <img src="images/icon-location.png" alt="Location" class="info-icon">
+                                <div>
+                                    <h4>Our Location</h4>
+                                    <p>Ram Jhula Parking, Rishikesh, Uttarakhand 249137</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <img src="images/icon-whatsapp.png" alt="Phone" class="info-icon">
+                                <div>
+                                    <h4>Call Us</h4>
+                                    <p><a href="tel:+918384017909">+91 8384017909</a></p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <img src="images/icon-satisfaction.png" alt="Email" class="info-icon">
+                                <div>
+                                    <h4>Email Us</h4>
+                                    <p><a href="mailto:mintattick@gmail.com">mintattick@gmail.com</a></p>
+                                </div>
+                            </div>
+
+                            <div class="working-hours">
+                                <h4>Working Hours</h4>
+                                <p>Monday - Sunday: 8:00 AM - 9:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer Section -->
+            <footer class="site-footer">
+                <div class="footer-container">
+                    <!-- Left Side: Brand & Info -->
+                    <div class="footer-left">
+                        <img src="images/logo.png" alt="Rishikesh Rafting Logo" class="footer-logo">
+                        <p>Approved by Uttarakhand Tourism & forest department. Experience thrilling river rafting with
+                            expert
+                            guides and premium safety gears.</p>
+                        <a href="https://goo.gl/maps/RishikeshLocationLink" target="_blank" class="footer-map-link">
+                            <img src="images/icon-location.png" alt="Location" class="footer-icon"> View on Google Maps
+                        </a>
+                    </div>
+
+                    <!-- Center: Contact Us -->
+                    <div class="footer-center">
+                        <h3>Contact Us</h3>
+                        <ul class="footer-contact-info">
+                            <li><strong>Phone:</strong> <a href="tel:+918384017909">8384017909</a></li>
+                            <li><strong>Email:</strong> <a href="mailto:mintattick@gmail.com">mintattick@gmail.com</a>
+                            </li>
+                            <li><strong>Address:</strong><br>Ram Jhula Parking, Rishikesh, Uttarakhand</li>
+                        </ul>
+                    </div>
+
+                    <!-- Right Side: Map iframe -->
+                    <div class="footer-right">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3448.987741369527!2d78.30948481511993!3d30.123284981853683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39091630c6cbda93%3A0x6bbaaa6d2f349dd!2sRam%20Jhula%2C%20Rishikesh%2C%20Uttarakhand%20249137!5e0!3m2!1sen!2sin!4v1689000000000!5m2!1sen!2sin"
+                            width="100%" height="200" style="border:0; border-radius: 8px;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <!-- Footer Bottom Bar -->
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Rishikesh Rafting. All rights reserved.</p>
+                    <p>Approved by Uttarakhand government</p>
+                </div>
+            </footer>
+
+            <!-- Sticky Contact Buttons -->
+            <div class="sticky-contact">
+                <a href="https://wa.me/918384017909" target="_blank" class="sticky-btn btn-whatsapp"
+                    aria-label="WhatsApp Us">
+                    <img src="images/icon-whatsapp.png" alt="WhatsApp">
+                </a>
+                <a href="tel:+918384017909" class="sticky-btn btn-call" aria-label="Call Us">
+                    <!-- Inline SVG for Phone Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24"
+                        height="24">
+                        <path
+                            d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                    </svg>
+                </a>
+            </div>
+
+            <script src="script.js"></script>
+</body>
+
+</html>
