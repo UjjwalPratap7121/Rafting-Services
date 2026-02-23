@@ -90,7 +90,7 @@ body {
 
 .video-container {
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -1056,4 +1056,235 @@ body {
 .btn-call {
     background-color: #007bff;
     /* Trust blue for phone call */
+}
+
+/* =========================================
+   RESPONSIVE DESIGN (Media Queries)
+   ========================================= */
+
+/* Tablet & Smaller Screens (max-width: 992px) */
+@media (max-width: 992px) {
+
+    /* General Adjustments */
+    section {
+        padding: 60px 0;
+        /* Less padding on small screens */
+    }
+
+    .about-section,
+    .packages-section,
+    .camping-section,
+    .contact-section {
+        padding: 60px 0;
+    }
+
+    /* Navbar Hamburger Menu Integration */
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .site-name {
+        font-size: 1.2rem;
+    }
+
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+        cursor: pointer;
+        z-index: 1000;
+    }
+
+    .menu-toggle .bar {
+        height: 3px;
+        width: 100%;
+        background-color: #fff;
+        /* Updated to white for dark navbar */
+        border-radius: 3px;
+        transition: all 0.3s ease;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        /* Hide off-screen */
+        height: 100vh;
+        width: 250px;
+        background-color: #1a252f;
+        /* Match navbar */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
+        transition: right 0.4s ease;
+        z-index: 999;
+    }
+
+    .nav-links.active {
+        right: 0;
+        /* Slide in */
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+
+    .nav-right {
+        display: none;
+        /* Hide "Book Now" btn in header on small screens */
+    }
+
+    /* Grids Scaling */
+    .packages-grid,
+    .photo-gallery {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns on tablet */
+    }
+
+    .activities-grid,
+    .reviews-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns on tablet */
+    }
+
+    .how-to-reach-content,
+    .contact-container,
+    .about-content {
+        grid-template-columns: 1fr;
+        /* Stack visually on tablet */
+        gap: 30px;
+    }
+
+    /* Fix About Images overflow */
+    .about-images {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-main {
+        width: 100%;
+        height: auto;
+    }
+
+    .img-secondary {
+        position: relative;
+        bottom: 0;
+        width: 80%;
+        margin-top: -50px;
+    }
+
+    .features-grid {
+        flex-wrap: wrap;
+        /* Allow feature cards to wrap instead of squeezing */
+    }
+
+    .feature-card {
+        min-width: 45%;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+        /* 2 cols for footer */
+    }
+
+
+    /* Mobile Screens (max-width: 768px) */
+    @media (max-width: 768px) {
+
+        /* General Spacing */
+        .container {
+            padding: 0 15px;
+        }
+
+        /* Hero Section */
+        .content h1 {
+            font-size: 2rem;
+            /* Even smaller for mobile */
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            font-size: 1rem;
+            padding: 0 10px;
+        }
+
+        /* Grids strictly to 1 column */
+        .packages-grid,
+        .photo-gallery,
+        .activities-grid,
+        .reviews-grid,
+        .footer-container {
+            grid-template-columns: 1fr;
+        }
+
+        .features-grid {
+            flex-direction: column;
+        }
+
+        .feature-card {
+            min-width: 100%;
+            width: 100%;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+        }
+
+        /* Details styling */
+        .about-content h3 {
+            font-size: 1.5rem;
+        }
+
+        .contact-form-box,
+        .contact-info-box {
+            padding: 25px 20px;
+            /* Reduce padding to stop overflow */
+        }
+
+        .distance-card {
+            padding: 20px;
+        }
+
+        .sticky-contact {
+            bottom: 15px;
+            right: 15px;
+        }
+
+        .sticky-btn {
+            width: 50px;
+            height: 50px;
+        }
+
+        .sticky-btn img,
+        .sticky-btn svg {
+            width: 25px;
+            height: 25px;
+        }
+
+        /* Details styling */
+        .about-content h3 {
+            font-size: 1.5rem;
+        }
+
+        .sticky-contact {
+            bottom: 15px;
+            right: 15px;
+        }
+
+        .sticky-btn {
+            width: 50px;
+            height: 50px;
+        }
+
+        .sticky-btn img,
+        .sticky-btn svg {
+            width: 28px;
+            height: 28px;
+        }
+    }
 }
