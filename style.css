@@ -400,8 +400,7 @@ body {
 /* Adventure Activities Section */
 .activities-section {
     padding: 100px 0;
-    background-color: #f8f9fa;
-    /* Off-white for visual separation */
+    background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
 }
 
 .activities-grid {
@@ -458,8 +457,10 @@ body {
 /* Packages Section */
 .packages-section {
     padding: 100px 0;
-    background-color: #fff;
-    /* Return to pure white background to separate from the previous #f8f9fa section */
+    background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('images/Rafting 1.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .packages-grid {
@@ -583,8 +584,16 @@ body {
 /* Camping Packages Section */
 .camping-section {
     padding: 100px 0;
-    background-color: #f8f9fa;
-    /* Alternating off-white background */
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('images/camp-1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.camping-section .section-title,
+.camping-section .section-subtitle {
+    color: #fff;
 }
 
 /* How to Reach Rishikesh Section */
@@ -688,8 +697,16 @@ body {
 /* Reviews Section */
 .reviews-section {
     padding: 100px 0;
-    background-color: #f8f9fa;
-    /* Off-white background */
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/Rafting 3.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.reviews-section .section-title,
+.reviews-section .section-subtitle {
+    color: #fff;
 }
 
 .reviews-grid {
